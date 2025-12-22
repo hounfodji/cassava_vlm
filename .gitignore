@@ -39,7 +39,7 @@ models/
 *.safetensors
 
 # Logs & outputs
-outputs/
+# outputs/
 logs/
 *.log
 
