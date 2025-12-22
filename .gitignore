@@ -47,3 +47,5 @@ logs/
 .env
 .env.local
 kaggle.json
+
+*.zip
