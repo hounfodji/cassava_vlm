@@ -1,0 +1,70 @@
+{
+  "timestamp": "2025-12-31T20:40:04.176034",
+  "model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "device": "cuda",
+  "dtype": "float16",
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "vram_total_gb": 31.35699462890625,
+    "vram_used_gb": 15.459294319152832
+  },
+  "model_stats": {
+    "total_params": 8292166656,
+    "total_params_billions": 8.29,
+    "trainable_params": 8292166656
+  },
+  "latency_benchmark": {
+    "num_samples": 10,
+    "avg_latency_s": 2.138469767570496,
+    "std_latency_s": 1.2567054918506226,
+    "min_latency_s": 0.988135576248169,
+    "max_latency_s": 4.933725118637085,
+    "target_latency_s": 2.0,
+    "target_met": false
+  },
+  "qualitative_test": {
+    "num_classes": 5,
+    "results": [
+      {
+        "disease": "CMD",
+        "image_id": "val_3551608318.jpg",
+        "label": 3,
+        "latency_s": 1.529170274734497,
+        "ground_truth": "Disease: Cassava Mosaic Disease (CMD)\n\nCassava Mosaic Disease (CMD) is characterized by severe mosaic patterns, leaf distortion, and stunted growth.",
+        "prediction": "The image shows a cassava leaf with symptoms of **Cassava Mosaic Virus (CMV)**. \n\n**Description:**\nCassava Mosaic Virus is a viral disease that affects cassava plants, causing mottling, chlorosis (yellowing), and stunting of the leaves and stems. The virus is transmitted by aphids and can significantly reduce crop yields. The symptoms typically appear as irregular green and yellow patches on the leaves, which can vary in size and shape. In severe cases, the entire leaf may turn yellow or brown."
+      },
+      {
+        "disease": "CBSD",
+        "image_id": "val_1617104687200.jpg",
+        "label": 1,
+        "latency_s": 1.6439757347106934,
+        "ground_truth": "Disease: Cassava Brown Streak Disease (CBSD)\n\nCassava Brown Streak Disease (CBSD) causes brown streaks on stems and necrosis in tubers, severely affecting yield.",
+        "prediction": "The image shows a cassava leaf with a healthy appearance, displaying a typical green color and visible veins. There is no visible sign of disease such as spots, discoloration, or wilting that would indicate the presence of a disease. Cassava leaves can sometimes show natural variations in color or texture, but without additional symptoms or context, it's not possible to definitively diagnose a disease.\n\nIf you suspect a disease, it would be best to consult with a local agricultural extension service or a plant pathologist who can provide a more accurate diagnosis based on a thorough examination of the plant and its environment."
+      },
+      {
+        "disease": "Healthy",
+        "image_id": "val_442386946.jpg",
+        "label": 4,
+        "latency_s": 4.230226755142212,
+        "ground_truth": "Disease: Healthy\n\nHealthy cassava plants show uniform green leaves without disease symptoms, discoloration, or deformities.",
+        "prediction": "The image shows a cassava plant with leaves that appear to be healthy, exhibiting a glossy green color and no visible signs of discoloration or damage. Based on the visual inspection provided in the image, there is no apparent disease present.\n\nHowever, it's important to note that a single image may not provide a comprehensive assessment of the plant's health. For a more accurate diagnosis, it would be advisable to examine the plant under various conditions (e.g., in different light, temperature, and humidity) and possibly consult with an agricultural expert or a plant pathologist who can conduct a thorough analysis, including possibly taking samples for laboratory testing. Some common diseases affecting cassava include:\n\n1. **Cassava Mosaic Virus (CMV)**: This virus causes mottling and stunting of the plant. Leaves may show yellowing and curling, and the plant may produce fewer tubers.\n\n2. **Cassava Brown Stunt Virus (CBSV)**: This virus causes brown spots on the leaves and stems, leading to stunted growth and reduced yield.\n\n3. **Cassava Wilt**: This is caused by fungi such as Fusarium oxysporum and can lead to wilting, yellowing, and eventual death of the plant.\n\n4. **Cassava Root Rot**: Caused by fungi like Rhizoctonia solani, this disease affects the roots, causing them to rot and the plant to wilt and die.\n\nIf you suspect any disease, it's best to seek professional advice from a local agricultural extension service or a certified diagnostic lab."
+      },
+      {
+        "disease": "CBB",
+        "image_id": "val_688011612.jpg",
+        "label": 0,
+        "latency_s": 2.6657721996307373,
+        "ground_truth": "Disease: Cassava Bacterial Blight (CBB)\n\nCassava Bacterial Blight (CBB) is a bacterial disease causing water-soaked lesions, leaf wilting, and stem cankers.",
+        "prediction": "The image shows a cassava leaf with yellowing, which could be indicative of several diseases or conditions. However, without more detailed information about the symptoms and the plant's environment, it is challenging to provide an accurate diagnosis.\n\nOne common disease affecting cassava leaves is **Cassava Mosaic Virus (CMV)**. CMV causes yellowing and mottling on the leaves, as well as stunted growth and reduced yield. The virus is transmitted by aphids and can be spread through infected seedlings.\n\nAnother possibility is **Bacterial Blight**, which can cause yellowing and wilting of the leaves. This disease is caused by bacteria and can be spread through contaminated water, tools, or insects.\n\nIf you suspect that your cassava plant has a disease, it would be best to consult with a local agricultural extension service or a plant pathologist for a proper diagnosis and treatment recommendations. They can provide guidance based on the specific symptoms observed and the environmental conditions in your area.\n"
+      },
+      {
+        "disease": "CGM",
+        "image_id": "val_1497437475.jpg",
+        "label": 2,
+        "latency_s": 4.919277906417847,
+        "ground_truth": "Disease: Cassava Green Mottle (CGM)\n\nCassava Green Mottle (CGM) presents as green chlorotic mottling patterns on leaves with mild mosaic symptoms.",
+        "prediction": "The image shows a cassava leaf with symptoms that could be indicative of several diseases, but without more detailed information or a closer inspection, it's challenging to pinpoint the exact disease. However, based on the visible symptoms, here are some possibilities:\n\n1. **Cassava Mosaic Virus (CMV)**: This is one of the most common viral diseases affecting cassava. Symptoms include mottling, distortion, and stunting of the plant. The leaves may show yellowing, curling, and mosaic patterns.\n\n2. **Cassava Brown Stunt Virus (CBSV)**: This virus causes brown spots on the leaves, which can lead to leaf curling and stunting. The spots often appear as irregular brown patches on the leaves.\n\n3. **Cassava Bacterial Blight (CBB)**: Although bacterial in nature, the symptoms can sometimes resemble viral diseases. CBB causes lesions on the leaves, stems, and roots, leading to wilting and death of the plant.\n\n4. **Cassava Rust Fungus (Puccinia mangiferae)**: While not as common as the above viruses, this fungus can cause leaf blight, leading to yellowing and browning of the leaves.\n\n5. **Nutrient Deficiency**: Sometimes, the symptoms might be due to nutrient deficiencies, such as iron deficiency chlorosis, which can cause yellowing of the leaves.\n\nTo accurately diagnose the disease, it would be necessary to:\n- Examine the entire plant for other symptoms.\n- Look for signs of insects or other pests that might be vectors of the disease.\n- Perform laboratory tests if possible, such as virus detection assays or bacterial culture.\n\nIf you suspect a disease, consulting with a local agricultural extension service or a plant pathologist would provide the best advice on how to manage the disease effectively.\n"
+      }
+    ]
+  }
+}
