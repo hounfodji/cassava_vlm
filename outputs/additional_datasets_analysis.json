@@ -1,0 +1,172 @@
+{
+  "dataset_statistics": {
+    "cbsd-1": {
+      "exists": true,
+      "path": "../data/cbsd-1",
+      "label": 1,
+      "disease": "Cassava Brown Streak Disease (CBSD)",
+      "description": "CBSD images with XML annotations",
+      "image_count": 1787,
+      "xml_count": 1785,
+      "has_xml_annotations": true,
+      "sample_image_names": [
+        "1617104520187.jpg",
+        "1617104697493.jpg",
+        "1617103868664.jpg",
+        "1617095239714.jpg",
+        "1617103514908.jpg"
+      ],
+      "estimated_valid_xml": 1785,
+      "xml_parse_errors": 0
+    },
+    "cbsd-2": {
+      "exists": true,
+      "path": "../data/cbsd-2",
+      "label": 1,
+      "disease": "Cassava Brown Streak Disease (CBSD)",
+      "description": "CBSD images with XML annotations",
+      "image_count": 1210,
+      "xml_count": 1210,
+      "has_xml_annotations": true,
+      "sample_image_names": [
+        "1617171326567.jpg",
+        "1617171329102.jpg",
+        "1617176797663.jpg",
+        "1617173019364.jpg",
+        "1617172037421.jpg"
+      ],
+      "estimated_valid_xml": 1210,
+      "xml_parse_errors": 0
+    },
+    "cmd_001": {
+      "exists": true,
+      "path": "../data/cmd_001",
+      "label": 3,
+      "disease": "Cassava Mosaic Disease (CMD)",
+      "description": "CMD images batch 1",
+      "image_count": 1211,
+      "xml_count": 0,
+      "has_xml_annotations": false,
+      "sample_image_names": [
+        "1616998278800.jpg",
+        "1616998483150.jpg",
+        "1616851575670.jpg",
+        "1616998736918.jpg",
+        "1616911860241.jpg"
+      ]
+    },
+    "cmd_002": {
+      "exists": true,
+      "path": "../data/cmd_002",
+      "label": 3,
+      "disease": "Cassava Mosaic Disease (CMD)",
+      "description": "CMD images batch 2",
+      "image_count": 1227,
+      "xml_count": 0,
+      "has_xml_annotations": false,
+      "sample_image_names": [
+        "uuid_2eec1be7-225b-4326-af9b-69b9b6482796.jpg",
+        "uuid_0b169451-b808-4a74-834f-95071fd59182.jpg",
+        "uuid_2a02f899-5dbf-4625-aac9-5fcdb56af0b9.jpg",
+        "uuid_0be74451-00e0-404c-a24a-73d95b225d06.jpg",
+        "uuid_1ec42814-abd3-4751-892d-4d9a1459b863.jpg"
+      ]
+    },
+    "cmd_003": {
+      "exists": true,
+      "path": "../data/cmd_003",
+      "label": 3,
+      "disease": "Cassava Mosaic Disease (CMD)",
+      "description": "CMD images batch 3",
+      "image_count": 1220,
+      "xml_count": 0,
+      "has_xml_annotations": false,
+      "sample_image_names": [
+        "uuid_6df104e7-276e-4205-88ee-cfeaef7dd46c.jpg",
+        "uuid_6de56c2f-cf2f-4b2f-a725-94b034d41afb.jpg",
+        "uuid_5c42a81a-edee-4c9e-91bb-335ed18cf5b9.jpg",
+        "uuid_5cfa13ff-30dc-4620-b4eb-942366f2a37b.jpg",
+        "uuid_4abb5eed-2cce-48e3-bf2c-044244f43518.jpg"
+      ]
+    },
+    "cmd_004": {
+      "exists": true,
+      "path": "../data/cmd_004",
+      "label": 3,
+      "disease": "Cassava Mosaic Disease (CMD)",
+      "description": "CMD images batch 4",
+      "image_count": 942,
+      "xml_count": 0,
+      "has_xml_annotations": false,
+      "sample_image_names": [
+        "uuid_e88ba1bb-8578-4650-9928-cf163cd200e8.jpg",
+        "uuid_746aa92f-1da0-40fa-bd04-e72fabd58012.jpg",
+        "uuid_8501b7c5-210f-4775-9208-c4028bbd9cb8.jpg",
+        "uuid_ce132caa-7ead-46a2-8d83-5d90441a5ac2.jpg",
+        "uuid_335f10fb-7601-4068-9c34-15f94b4f8159.jpg"
+      ]
+    },
+    "cmd_005": {
+      "exists": true,
+      "path": "../data/cmd_005",
+      "label": 3,
+      "disease": "Cassava Mosaic Disease (CMD)",
+      "description": "CMD images batch 5",
+      "image_count": 400,
+      "xml_count": 0,
+      "has_xml_annotations": false,
+      "sample_image_names": [
+        "uuid_14aaa179-e419-4763-a05d-ad99ab8b1917.jpg",
+        "uuid_7a4f32d9-2638-4786-9b21-60bd605a0fb0.jpg",
+        "uuid_34ae0fb8-f761-4b73-a794-ebd85a4a3409.jpg",
+        "uuid_77eba3ef-7ab8-4056-b788-67dc4f62c66b.jpg",
+        "uuid_052a5970-3e48-4706-9114-e151b73a3247.jpg"
+      ]
+    },
+    "healthy_001": {
+      "exists": true,
+      "path": "../data/healthy_001",
+      "label": 4,
+      "disease": "Healthy",
+      "description": "Healthy images batch 1",
+      "image_count": 597,
+      "xml_count": 0,
+      "has_xml_annotations": false,
+      "sample_image_names": [
+        "1617181214246.jpg",
+        "1617181296949.jpg",
+        "1616768431057.jpg",
+        "1617181238698.jpg",
+        "1617170237833.jpg"
+      ]
+    },
+    "healthy_002": {
+      "exists": true,
+      "path": "../data/healthy_002",
+      "label": 4,
+      "disease": "Healthy",
+      "description": "Healthy images batch 2",
+      "image_count": 522,
+      "xml_count": 0,
+      "has_xml_annotations": false,
+      "sample_image_names": [
+        "1616742967313.jpg",
+        "1616761344761.jpg",
+        "1616767732988.jpg",
+        "1616760476812.jpg",
+        "1616751765167.jpg"
+      ]
+    }
+  },
+  "class_counts": {
+    "Cassava Brown Streak Disease (CBSD)": 2997,
+    "Cassava Mosaic Disease (CMD)": 5000,
+    "Healthy": 1119
+  },
+  "summary": {
+    "total_additional_images": 9116,
+    "total_xml_annotations": 2995,
+    "main_dataset_size": 21397,
+    "combined_dataset_size": 30513
+  }
+}
