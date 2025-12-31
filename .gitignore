@@ -51,3 +51,4 @@ kaggle.json
 *.zip
 *.rar
 /data
+outputs/processed/
