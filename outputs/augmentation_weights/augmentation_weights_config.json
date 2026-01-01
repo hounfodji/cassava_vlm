@@ -1,0 +1,106 @@
+{
+  "class_distribution": {
+    "CBB": {
+      "label": 0,
+      "count": 1087,
+      "percentage": 3.5649863894263882,
+      "name": "Cassava Bacterial Blight (CBB)"
+    },
+    "CBSD": {
+      "label": 1,
+      "count": 5186,
+      "percentage": 17.00829753041881,
+      "name": "Cassava Brown Streak Disease (CBSD)"
+    },
+    "CGM": {
+      "label": 2,
+      "count": 2386,
+      "percentage": 7.825259912761143,
+      "name": "Cassava Green Mottle (CGM)"
+    },
+    "CMD": {
+      "label": 3,
+      "count": 18136,
+      "percentage": 59.47984651208553,
+      "name": "Cassava Mosaic Disease (CMD)"
+    },
+    "Healthy": {
+      "label": 4,
+      "count": 3696,
+      "percentage": 12.121609655308124,
+      "name": "Healthy"
+    }
+  },
+  "imbalance_stats": {
+    "total_images": 30491,
+    "majority_class": "CMD",
+    "majority_count": 18136,
+    "minority_class": "CBB",
+    "minority_count": 1087,
+    "imbalance_ratio": 16.684452621895126
+  },
+  "class_weights": {
+    "0": 5.610119595216191,
+    "1": 1.175896644812958,
+    "2": 2.5558256496227996,
+    "3": 0.3362483458314954,
+    "4": 1.6499458874458874
+  },
+  "augmentation_strategy": {
+    "description": "Augmentation pour classes minoritaires (CBB, CGM)",
+    "target_classes": [
+      "CBB",
+      "CGM"
+    ],
+    "techniques": [
+      {
+        "name": "Rotation",
+        "description": "Rotation al\u00e9atoire \u00b115\u00b0",
+        "parameters": {
+          "degrees": 15
+        },
+        "probability": 0.5
+      },
+      {
+        "name": "Horizontal Flip",
+        "description": "Retournement horizontal",
+        "parameters": {},
+        "probability": 0.5
+      },
+      {
+        "name": "Vertical Flip",
+        "description": "Retournement vertical",
+        "parameters": {},
+        "probability": 0.3
+      },
+      {
+        "name": "Color Jitter",
+        "description": "Variation brightness, contrast, saturation",
+        "parameters": {
+          "brightness": 0.2,
+          "contrast": 0.2,
+          "saturation": 0.2,
+          "hue": 0.1
+        },
+        "probability": 0.4
+      },
+      {
+        "name": "Random Crop",
+        "description": "Crop al\u00e9atoire avec resize",
+        "parameters": {
+          "scale": [
+            0.8,
+            1.0
+          ]
+        },
+        "probability": 0.3
+      }
+    ],
+    "notes": [
+      "Augmentation appliqu\u00e9e ON-THE-FLY pendant l'entra\u00eenement",
+      "Plus agressive pour CBB (classe la plus minoritaire)",
+      "Pr\u00e9serve les caract\u00e9ristiques visuelles des maladies",
+      "\u00c9vite les transformations qui changeraient les sympt\u00f4mes"
+    ]
+  }
+}
