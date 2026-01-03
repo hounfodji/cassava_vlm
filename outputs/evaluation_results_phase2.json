@@ -1,0 +1,106 @@
+{
+  "phase": "phase2_evaluation",
+  "test_samples": 3050,
+  "valid_samples": 3050,
+  "parsing_errors": 0,
+  "evaluation_duration_minutes": 11.046412042776744,
+  "metrics": {
+    "accuracy": 0.12524590163934426,
+    "precision": 0.06107877223628157,
+    "recall": 0.12524590163934426,
+    "f1_score": 0.047989485904719194
+  },
+  "confusion_matrix": [
+    [
+      0,
+      44,
+      0,
+      0,
+      65
+    ],
+    [
+      1,
+      46,
+      0,
+      0,
+      472
+    ],
+    [
+      2,
+      10,
+      0,
+      0,
+      226
+    ],
+    [
+      10,
+      34,
+      0,
+      0,
+      1770
+    ],
+    [
+      1,
+      33,
+      0,
+      0,
+      336
+    ]
+  ],
+  "classification_report": "                      precision    recall  f1-score   support\n\n    Bacterial Blight     0.0000    0.0000    0.0000       109\nBrown Streak Disease     0.2754    0.0886    0.1341       519\n        Green Mottle     0.0000    0.0000    0.0000       238\n             Healthy     0.0000    0.0000    0.0000      1814\n      Mosaic Disease     0.1171    0.9081    0.2075       370\n\n            accuracy                         0.1252      3050\n           macro avg     0.0785    0.1993    0.0683      3050\n        weighted avg     0.0611    0.1252    0.0480      3050\n",
+  "per_class_metrics": {
+    "Bacterial Blight": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "support": 109,
+      "errors": 109
+    },
+    "Brown Streak Disease": {
+      "precision": 0.2754491017964072,
+      "recall": 0.08863198458574181,
+      "f1_score": 0.13411078717201166,
+      "support": 519,
+      "errors": 473
+    },
+    "Green Mottle": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "support": 238,
+      "errors": 238
+    },
+    "Healthy": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "support": 1814,
+      "errors": 1814
+    },
+    "Mosaic Disease": {
+      "precision": 0.1171139769954688,
+      "recall": 0.9081081081081082,
+      "f1_score": 0.20747144180302562,
+      "support": 370,
+      "errors": 34
+    }
+  },
+  "comparison": {
+    "Baseline (Zero-shot)": {
+      "Accuracy": 0.4,
+      "Val Loss": null,
+      "Duration (h)": 0
+    },
+    "Phase 1 (Projector)": {
+      "Accuracy": null,
+      "Val Loss": 6.5445,
+      "Duration (h)": 1.18
+    },
+    "Phase 2 (LoRA)": {
+      "Accuracy": 0.12524590163934426,
+      "Val Loss": 6.004462310603407,
+      "Duration (h)": 3.537786277797487
+    }
+  },
+  "target_achieved": false
+}
