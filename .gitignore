@@ -21,10 +21,59 @@ ENV/
 *.swp
 *.swo
 
+<<<<<<< HEAD
+=======
+# Data (too large for git)
+data/
+data/raw/
+data/stage*/
+!data/README.md
+!data/*/.gitkeep
+outputs
+# External datasets and benchmarks
+UnicomBenchmark/
+*.zip
+*.tar.gz
+*.rar
+
+# Checkpoints and model files (too large)
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+*.bin
+*.safetensors
+*.h5
+*.pkl
+*.pickle
+*.onnx
+!checkpoints/.gitkeep
+
+# Hugging Face cache
+.cache/huggingface/
+transformers_cache/
+hub/
+
+# API keys
+.env
+*.key
+kaggle.json
+
+# Logs
+*.log
+logs/
+tensorboard/
+
+# Cache
+.cache/
+*.cache
+
+>>>>>>> master
 # OS
 .DS_Store
 Thumbs.db
 
+<<<<<<< HEAD
 # Data (large files)
 data/raw/**/*
 data/processed/**/*
@@ -54,3 +103,24 @@ kaggle.json
 outputs/processed/
 outputs/vlm_dataset/
 notebooks/wandb
+=======
+# Temporary files
+*.tmp
+*_checkpoint.json
+wandb/
+mlruns/
+
+# Training outputs
+trainer_state.json
+training_args.bin
+optimizer.pt
+scheduler.pt
+rng_state*.pth
+
+# Large JSON datasets (keep small samples only)
+*_train.json
+*_full.json
+# Allow small example datasets
+!*_sample.json
+!*_example.json
+>>>>>>> master
