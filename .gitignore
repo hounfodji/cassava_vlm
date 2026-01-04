@@ -29,11 +29,12 @@ ENV/
 *.swo
 
 # Data (too large for git)
+data/
 data/raw/
 data/stage*/
 !data/README.md
 !data/*/.gitkeep
-
+outputs
 # External datasets and benchmarks
 UnicomBenchmark/
 *.zip
