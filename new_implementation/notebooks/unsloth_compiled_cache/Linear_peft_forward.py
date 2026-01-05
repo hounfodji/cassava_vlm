@@ -1,8 +1,8 @@
 """
-2025.11.5
-2025.11.4
-4.57.2
-0.8.6
+2026.1.1
+2026.1.1
+4.57.3
+0.24.0
 __UNSLOTH_VERSIONING__
 """
 
@@ -23,26 +23,33 @@ __UNSLOTH_VERSIONING__
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 
-torch_compile_options = {'epilogue_fusion': True, 'max_autotune': False, 'shape_padding': True, 'trace.enabled': False, 'triton.cudagraphs': False, 'debug': False, 'dce': True, 'memory_planning': True, 'coordinate_descent_tuning': False, 'trace.graph_diagram': False, 'compile_threads': 32, 'group_fusion': True, 'disable_progress': True, 'verbose_progress': False, 'triton.multi_kernel': 0, 'triton.use_block_ptr': False, 'triton.enable_persistent_tma_matmul': True, 'triton.autotune_at_compile_time': False, 'triton.cooperative_reductions': False, 'cuda.compile_opt_level': '-O2', 'cuda.enable_cuda_lto': True, 'combo_kernels': False, 'benchmark_combo_kernel': True, 'combo_kernel_foreach_dynamic_shapes': True}
+try:
+    from peft.tuners.lora.layer import VARIANT_KWARG_KEYS
+except ImportError:
+    VARIANT_KWARG_KEYS = ['alora_offsets']
+torch_compile_options = {'epilogue_fusion': True, 'max_autotune': False, 'shape_padding': True, 'trace.enabled': False, 'triton.cudagraphs': False, 'debug': False, 'dce': True, 'memory_planning': True, 'coordinate_descent_tuning': False, 'trace.graph_diagram': False, 'compile_threads': 24, 'group_fusion': True, 'disable_progress': True, 'verbose_progress': False, 'triton.multi_kernel': 0, 'triton.use_block_ptr': False, 'triton.enable_persistent_tma_matmul': True, 'triton.autotune_at_compile_time': False, 'triton.cooperative_reductions': False, 'cuda.compile_opt_level': '-O2', 'cuda.enable_cuda_lto': True, 'combo_kernels': False, 'benchmark_combo_kernel': True, 'combo_kernel_foreach_dynamic_shapes': True}
 from torch import Tensor
 import torch
 import torch.nn as nn
 from torch.nn import functional as F
 from typing import Any, List, Optional, Tuple, Union, Dict, Set, Callable
-from peft.tuners.lora.variants import (Any, torch)
+from peft.tuners.lora.torchao import (Any, torch)
 
 
 torch_addmm = torch.addmm
 torch_add   = torch.add
 # @torch.compile(fullgraph = False, dynamic = True, options = torch_compile_options)
 def lora_forward(result, lora_A, lora_B, dropout, x, scaling):
-    xA = dropout(x) @ lora_A.weight.t()
+    # Use result.dtype (bfloat16 from base layer) since x may have been cast to float32
+    # by _cast_input_dtype when autocast is disabled
+    target_dtype = result.dtype
+    xA = dropout(x).to(target_dtype) @ lora_A.weight.to(target_dtype).t()
     # output = result + scaling * xA @ lora_B.weight.t()
     shape = result.shape
     output = torch_addmm(
         result.view(-1, shape[-1]),
         xA.view(-1, xA.shape[-1]),
-        lora_B.weight.t(),
+        lora_B.weight.to(target_dtype).t(),
         alpha = scaling,
         beta = 1,
     ).view(shape)
@@ -50,17 +57,17 @@ def lora_forward(result, lora_A, lora_B, dropout, x, scaling):
     bias = lora_B.bias
     if bias is not None:
         output = torch_add(
-        output,
-        bias,
-        alpha = scaling,
-    )
+            output,
+            bias.to(target_dtype),
+            alpha = scaling,
+        )
     return output
 pass
 
 def unsloth_forward(self, x: torch.Tensor, *args: Any, **kwargs: Any) -> torch.Tensor:
     
     adapter_names = kwargs.pop("adapter_names", None)
-    
+    variant_kwargs = {k: kwargs.pop(k, None) for k in VARIANT_KWARG_KEYS}  # don't pass these to base_layer
 
     if self.disable_adapters:
         if self.merged:

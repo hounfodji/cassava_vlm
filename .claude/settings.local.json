@@ -5,7 +5,8 @@
       "Bash(python3:*)",
       "WebSearch",
       "Bash(ls:*)",
-      "Bash(wc:*)"
+      "Bash(wc:*)",
+      "Bash(cat:*)"
     ],
     "deny": [],
     "ask": []
