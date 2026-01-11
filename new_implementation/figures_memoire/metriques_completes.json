@@ -1,0 +1,35 @@
+{
+  "gemma": {
+    "model": "Gemma 3n (2B)",
+    "global_accuracy": 65.05,
+    "classes": {
+      "CBB": 34.0,
+      "CBSD": 2.9,
+      "CGM": 81.4,
+      "CMD": 89.4,
+      "Healthy": 40.3
+    },
+    "val_loss_final": 1.0,
+    "training_time_hours": 6.5,
+    "hallucinations": 1
+  },
+  "qwen": {
+    "model": "Qwen2.5-VL (7B)",
+    "global_accuracy": 80.52,
+    "classes": {
+      "CBB": 55.1,
+      "CBSD": 84.0,
+      "CGM": 56.5,
+      "CMD": 86.0,
+      "Healthy": 75.4
+    },
+    "val_loss_final": 0.07,
+    "training_time_hours": 11.5,
+    "hallucinations": 0
+  },
+  "improvements": {
+    "global_accuracy_points": 15.469999999999999,
+    "cbsd_points": 81.1,
+    "loss_reduction_percent": 93.0
+  }
+}
