@@ -1,0 +1,72 @@
+
+===============================================================================
+                    RAPPORT D'ÉVALUATION - CassavaVLM V5
+                        Mémoire d'Ingénieur ESATIC
+===============================================================================
+
+📅 Date d'évaluation: 2026-01-19 23:10:59
+🎯 Modèle: unsloth/Qwen2.5-VL-7B-Instruct-bnb-4bit
+📊 Dataset de validation: 2928 échantillons
+
+ACCURACY GLOBALE: 0.4131 (41.31%)
+
+===============================================================================
+                            PERFORMANCES PAR CLASSE
+===============================================================================
+
+Classe       Precision  Recall     F1-Score   Support 
+------------------------------------------------------------
+CBB          0.3009     0.7680     0.4323     181     
+CBSD         0.3442     0.7891     0.4793     294     
+CGM          0.4846     0.5126     0.4982     277     
+CMD          0.4142     0.9138     0.5700     557     
+Healthy      0.6952     0.5484     0.6131     341     
+
+===============================================================================
+                            MOYENNES GLOBALES
+===============================================================================
+
+Macro Average:
+- Precision: 0.4478
+- Recall:    0.7064
+- F1-Score:  0.5186
+
+Weighted Average:
+- Precision: 0.4592
+- Recall:    0.7327
+- F1-Score:  0.5356
+
+===============================================================================
+                               ANALYSE
+===============================================================================
+
+🏆 Meilleure performance: Healthy (F1: 0.6131)
+⚠️  Performance à améliorer: CBB (F1: 0.4323)
+
+📈 Distribution des échantillons de test:
+   CBB: 181 échantillons (6.2%)
+   CBSD: 294 échantillons (10.0%)
+   CGM: 277 échantillons (9.5%)
+   CMD: 557 échantillons (19.0%)
+   Healthy: 341 échantillons (11.7%)
+
+===============================================================================
+                          MATRICE DE CONFUSION
+===============================================================================
+
+Prédictions vs Réalité (lignes=réel, colonnes=prédit):
+
+              CBB     CBSD      CGM      CMD  Healthy  Unknown
+     CBB      139       20        5        6       11        0 
+    CBSD       30      232        4       12       16        0 
+     CGM       12       37      142       68       18        0 
+     CMD        7       31        6      509        4        0 
+ Healthy       72       55        6       21      187        0 
+ Unknown        0        0        0        0        0        0 
+
+===============================================================================
+
+📝 Ce rapport peut être directement intégré dans votre mémoire d'ingénieur.
+   Figures générées: confusion_matrix.png, performance_analysis.png
+
+===============================================================================

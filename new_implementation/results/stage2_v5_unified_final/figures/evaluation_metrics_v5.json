@@ -1,0 +1,116 @@
+{
+  "timestamp": "2026-01-20 16:19:34",
+  "model_name": "unsloth/Qwen2.5-VL-7B-Instruct-bnb-4bit",
+  "strategy": "V5_Unified_MultiTask",
+  "validation_samples": 2928,
+  "global_accuracy": 0.45848992142125045,
+  "per_class_metrics": {
+    "CBB": {
+      "precision": 0.3708206686930091,
+      "recall": 0.6740331491712708,
+      "f1_score": 0.47843137254901963,
+      "support": 181,
+      "class_accuracy": 0.6740331491712708
+    },
+    "CBSD": {
+      "precision": 0.4176182707993475,
+      "recall": 0.8707482993197279,
+      "f1_score": 0.5644983461962514,
+      "support": 294,
+      "class_accuracy": 0.8707482993197279
+    },
+    "CGM": {
+      "precision": 0.4641975308641975,
+      "recall": 0.6787003610108303,
+      "f1_score": 0.5513196480938416,
+      "support": 277,
+      "class_accuracy": 0.6787003610108303
+    },
+    "CMD": {
+      "precision": 0.42799678197908286,
+      "recall": 0.9551166965888689,
+      "f1_score": 0.5911111111111111,
+      "support": 557,
+      "class_accuracy": 0.9551166965888689
+    },
+    "Healthy": {
+      "precision": 0.7240356083086054,
+      "recall": 0.7155425219941349,
+      "f1_score": 0.7197640117994101,
+      "support": 341,
+      "class_accuracy": 0.7155425219941349
+    }
+  },
+  "macro_averages": {
+    "precision": 0.4809337721288484,
+    "recall": 0.7788282056169665,
+    "f1_score": 0.5810248979499267
+  },
+  "weighted_averages": {
+    "precision": 0.4871341689050964,
+    "recall": 0.8133333333333334,
+    "f1_score": 0.5939166979682136
+  },
+  "class_distribution": {
+    "CBB": 181,
+    "CBSD": 294,
+    "CGM": 277,
+    "CMD": 557,
+    "Healthy": 341
+  },
+  "confusion_matrix": [
+    [
+      122,
+      22,
+      8,
+      9,
+      20,
+      0
+    ],
+    [
+      9,
+      256,
+      8,
+      14,
+      7,
+      0
+    ],
+    [
+      5,
+      20,
+      188,
+      43,
+      21,
+      0
+    ],
+    [
+      1,
+      11,
+      9,
+      532,
+      4,
+      0
+    ],
+    [
+      29,
+      38,
+      13,
+      17,
+      244,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "predictions_summary": {
+    "total_predictions": 2927,
+    "correct_predictions": 1342,
+    "accuracy_percentage": 45.84899214212504
+  }
+}

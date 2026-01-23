@@ -10,6 +10,7 @@ __pycache__/
 venv/
 env/
 ENV/
+redaction/
 
 # Jupyter Notebook
 .ipynb_checkpoints/
@@ -21,8 +22,6 @@ ENV/
 *.swp
 *.swo
 
-<<<<<<< HEAD
-=======
 # Data (too large for git)
 data/
 data/raw/
@@ -68,12 +67,10 @@ tensorboard/
 .cache/
 *.cache
 
->>>>>>> master
 # OS
 .DS_Store
 Thumbs.db
 
-<<<<<<< HEAD
 # Data (large files)
 data/raw/**/*
 data/processed/**/*
@@ -103,24 +100,3 @@ kaggle.json
 outputs/processed/
 outputs/vlm_dataset/
 notebooks/wandb
-=======
-# Temporary files
-*.tmp
-*_checkpoint.json
-wandb/
-mlruns/
-
-# Training outputs
-trainer_state.json
-training_args.bin
-optimizer.pt
-scheduler.pt
-rng_state*.pth
-
-# Large JSON datasets (keep small samples only)
-*_train.json
-*_full.json
-# Allow small example datasets
-!*_sample.json
-!*_example.json
->>>>>>> master

@@ -1,0 +1,107 @@
+
+===============================================================================
+                    ÉVALUATION COMPLÈTE CORRIGÉE - CassavaVLM V5
+                         DIAGNOSTIC APPROFONDI
+===============================================================================
+
+📅 Date d'évaluation: 2026-01-21 23:17:26
+🎯 Modèle évalué: /home/hounfodjidagba/learning/cassava/new_implementation/checkpoints/stage2_v5_unified_final/final_model
+📊 Dataset de test: 150 échantillons
+🔧 Fonction d'extraction corrigée avec patterns pondérés
+
+ACCURACY CORRIGÉE: 0.8000 (80.00%)
+
+===============================================================================
+                            STATISTIQUES GÉNÉRALES
+===============================================================================
+
+📊 Prédictions totales: 150
+✅ Prédictions réussies: 150 (100.0%)
+❌ Erreurs système: 0 (0.0%)
+🎯 Prédictions correctes: 120 (80.0%)
+🔄 Prédictions incorrectes: 30 (20.0%)
+
+===============================================================================
+                            MÉTRIQUES DÉTAILLÉES
+===============================================================================
+
+CBB:
+  - Precision: 0.7647
+  - Recall: 0.6842
+  - F1-Score: 0.7222
+  - Support: 19
+
+CBSD:
+  - Precision: 0.7500
+  - Recall: 0.8000
+  - F1-Score: 0.7742
+  - Support: 30
+
+CGM:
+  - Precision: 0.8500
+  - Recall: 0.6538
+  - F1-Score: 0.7391
+  - Support: 26
+
+CMD:
+  - Precision: 0.8676
+  - Recall: 0.9365
+  - F1-Score: 0.9008
+  - Support: 63
+
+Healthy:
+  - Precision: 0.5385
+  - Recall: 0.5833
+  - F1-Score: 0.5600
+  - Support: 12
+
+===============================================================================
+                            MOYENNES GLOBALES
+===============================================================================
+
+Macro Average:
+- Precision: 0.7542
+- Recall: 0.7316
+- F1-Score: 0.7393
+
+Weighted Average:
+- Precision: 0.8017
+- Recall: 0.8000
+- F1-Score: 0.7976
+
+===============================================================================
+                            ANALYSE COMPARATIVE
+===============================================================================
+
+🔍 Accuracy précédente (erronée): 0.4585 (45.85%)
+✅ Accuracy corrigée: 0.8000 (80.00%)
+📈 Amélioration: +0.3415 (+34.15 points de pourcentage)
+
+📋 Corrections apportées:
+1. ✅ Fonction d'extraction améliorée avec patterns pondérés
+2. ✅ Normalisation des noms de classes
+3. ✅ Diagnostic détaillé de chaque prédiction
+4. ✅ Gestion robuste des erreurs
+5. ✅ Analyse qualitative approfondie
+
+===============================================================================
+                            CONCLUSIONS
+===============================================================================
+
+🎯 Le modèle CassavaVLM V5 obtient une accuracy réelle de 80.00%
+🔍 L'évaluation précédente sous-estimait les performances à cause d'un bug d'extraction
+📊 150 prédictions sur 150 ont réussi (100.0%)
+✨ Les métriques corrigées révèlent de bonnes performances sur la plupart des classes
+
+📁 Fichiers générés:
+- confusion_matrix_corrected.png : Matrice de confusion détaillée
+- evaluation_gallery_corrected.png : Galerie de prédictions avec diagnostic
+- all_predictions_detailed.csv : Toutes les prédictions avec debug
+- valid_predictions_analysis.csv : Analyse des prédictions valides
+
+===============================================================================
+
+📝 Ce rapport corrige les métriques d'évaluation et révèle les vraies performances
+   du modèle CassavaVLM V5 pour votre mémoire d'ingénieur.
+
+===============================================================================

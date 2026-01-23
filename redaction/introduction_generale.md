@@ -1,100 +1,200 @@
 # INTRODUCTION GÉNÉRALE
 
-Le manioc (*Manihot esculenta* Crantz) occupe une place singulière dans le paysage agricole mondial. Troisième source de glucides après le blé et le riz, cette plante tropicale assure quotidiennement la subsistance de plus de 800 millions de personnes à travers le monde (FAO, 2023). Selon les données de FAOSTAT, la production mondiale a atteint 333,7 millions de tonnes en 2023, marquant une progression de 32% par rapport à 2010. En Afrique subsaharienne, où se concentre 63,6% de cette production (Osabohien et al., 2023), le manioc dépasse le simple statut de culture vivrière pour devenir un véritable pilier de la sécurité alimentaire. Sa rusticité face aux sols pauvres et aux épisodes de sécheresse en fait une culture de résilience, particulièrement précieuse dans un contexte de changements climatiques (Jarvis et al., 2012).
+## 1. Contexte et justification
 
-Au Bénin, cette réalité prend une dimension encore plus marquée. Avec une production annuelle avoisinant 4,4 millions de tonnes selon FAOSTAT (2023), le manioc constitue la première culture du pays en volume. Le secteur agricole contribue à 26,9% du PIB national et emploie plus de 70% de la population active (Banque Mondiale, 2019). Les racines transformées en gari, tapioca ou lafun nourrissent des millions de familles, tandis que la filière fait vivre environ 550 000 exploitations agricoles, majoritairement familiales et d'une superficie moyenne de 1,7 hectare (MAEP, 2021). La consommation nationale de gari atteint 126 kilogrammes par personne et par an (Aréolis, 2023), témoignant de l'ancrage profond de cette culture dans les habitudes alimentaires béninoises.
+Le manioc (*Manihot esculenta* Crantz) constitue la troisième source mondiale de glucides après le riz et le maïs, et représente un pilier fondamental de la sécurité alimentaire dans les régions tropicales [1]. Selon les données les plus récentes de la FAO, la production mondiale de manioc a atteint 333,68 millions de tonnes en 2023, marquant une croissance soutenue de 32% par rapport aux 252 millions de tonnes enregistrées en 2010 [2]. Cette progression remarquable témoigne de l'importance croissante de cette culture dans les systèmes alimentaires mondiaux, particulièrement face aux défis posés par les changements climatiques.
 
-Pourtant, cette dépendance au manioc expose les populations à une vulnérabilité considérable lorsque les maladies frappent les cultures. La mosaïque du manioc (CMD), la striure brune (CBSD), la bactériose (CBB) et les attaques d'acariens verts (CGM) causent chaque année des pertes estimées entre 1,9 et 2,7 milliards de dollars américains à l'échelle du continent africain (Patil et Fauquet, 2009 ; Legg et al., 2014). Au Bénin, les enquêtes de terrain menées par le programme WAVE en 2020 révèlent que 81% des champs de manioc présentent des symptômes de mosaïque, avec des taux atteignant 100% dans certaines régions comme l'Ouémé et l'Alibori (Zinsou et al., 2022). Ces chiffres traduisent une situation sanitaire préoccupante qui menace directement la sécurité alimentaire des 3,3 millions de Béninois considérés comme vulnérables sur le plan nutritionnel (PAM, 2022).
+L'Afrique subsaharienne domine la production mondiale avec une contribution de 56 à 63% du volume total, soit environ 186 à 200 millions de tonnes annuellement [2, 3]. Le Nigeria occupe la première place mondiale avec 62,7 millions de tonnes, suivi de la République Démocratique du Congo (45,2 millions de tonnes) et du Ghana (26,5 millions de tonnes) [2]. Cette prédominance africaine s'explique par la résilience exceptionnelle du manioc face aux conditions climatiques difficiles et aux sols pauvres, lui valant le surnom de « culture de la famine » dans de nombreuses communautés rurales [4].
 
-Face à cette menace, le diagnostic précoce et fiable des maladies apparaît comme un levier essentiel de lutte. Cependant, les méthodes conventionnelles se heurtent à des obstacles majeurs. L'inspection visuelle par les agriculteurs eux-mêmes ne permet d'identifier correctement les maladies que dans 18 à 31% des cas, contre 40 à 58% pour les agents de vulgarisation formés (Ramcharan et al., 2019). Les analyses en laboratoire, bien que précises, restent inaccessibles à la grande majorité des petits producteurs : un test PCR complet coûte plus de 120 dollars américains et nécessite des équipements que peu de structures possèdent en zone rurale (Bisimwa et al., 2022). Le ratio d'experts phytopathologistes par rapport à la population avoisine 1 pour 1 million en Afrique, contre 1 pour 25 000 aux États-Unis (Wilson et al., 2018), rendant illusoire tout espoir de diagnostic expert généralisé.
+Le manioc assure la nutrition quotidienne de plus de 700 millions de personnes en Afrique, représentant environ 37% de l'apport calorique du continent [3, 5]. Cette dépendance nutritionnelle est particulièrement marquée en Afrique centrale, où la consommation peut dépasser 1000 calories par personne et par jour en République Démocratique du Congo [5]. Au-delà de son rôle alimentaire, le manioc génère des revenus substantiels pour des millions de petits agriculteurs et alimente une chaîne de valeur diversifiée incluant la transformation en gari, tapioca, amidon industriel et bioéthanol [6].
 
-L'intelligence artificielle, et plus particulièrement l'apprentissage profond, a ouvert ces dernières années des perspectives nouvelles pour démocratiser le diagnostic phytosanitaire. Des applications comme PlantVillage Nuru, développée conjointement par Penn State University et l'IITA, ou Plantix de PEAT GmbH, permettent désormais aux agriculteurs équipés de smartphones d'obtenir un diagnostic instantané en photographiant simplement les feuilles de leurs plants. Ces outils reposent sur des réseaux de neurones convolutifs (CNN) entraînés à reconnaître les symptômes caractéristiques de chaque maladie. Sur le manioc, PlantVillage Nuru atteint une précision de 74 à 88% en conditions réelles lorsque six feuilles par plant sont analysées (Mrisho et al., 2020).
+Le Bénin se classe au 19ème rang mondial des producteurs de manioc avec une production annuelle de 4,4 millions de tonnes en 2023, représentant environ 1,3% de la production mondiale et le 7ème rang africain [2]. Cette production fait du manioc la première culture vivrière du pays en termes de tonnage, devant le maïs et l'igname. Les départements du Zou, des Collines et de l'Atlantique concentrent historiquement environ 75% de la production nationale, bénéficiant de conditions pédoclimatiques favorables avec des sols ferralitiques et une pluviométrie comprise entre 1000 et 1400 millimètres par an [7].
 
-Malgré ces avancées prometteuses, l'adoption de ces technologies demeure limitée. Une étude récente conduite par Ahoya et al. (2024) au Bénin montre que seulement 14,1% des agriculteurs interrogés utilisent effectivement l'application PlantVillage Nuru. Plusieurs facteurs expliquent cette faible appropriation. D'une part, les applications actuelles fonctionnent comme des boîtes noires qui délivrent un diagnostic sans l'expliquer, ce qui n'inspire pas confiance aux utilisateurs (Mohanty et al., 2016). D'autre part, elles ne permettent aucune interaction : l'agriculteur ne peut pas poser de questions complémentaires ni obtenir des conseils adaptés à sa situation particulière. Les recommandations de traitement restent génériques, ignorant les ressources localement disponibles et les contraintes économiques des petits producteurs. Enfin, le support linguistique se limite généralement au français ou à l'anglais, alors que la majorité des agriculteurs béninois communiquent en fon, yoruba ou dans d'autres langues nationales qui représentent la langue maternelle de 65% de la population (Recensement Général de la Population, 2013).
+*(Insérer Figure 1 : Carte de la production mondiale de manioc montrant la dominance de l'Afrique subsaharienne et la position du Bénin)*
 
-Une nouvelle génération de modèles d'intelligence artificielle, les Vision-Language Models (VLM), offre aujourd'hui la possibilité de dépasser ces limitations. Ces architectures, dont BLIP-2 (Li et al., 2023) et Qwen2-VL (Bai et al., 2024) constituent des exemples représentatifs, combinent la capacité d'analyser des images avec celle de comprendre et de générer du langage naturel. Elles permettent ainsi d'établir un véritable dialogue avec l'utilisateur : le modèle peut expliquer son diagnostic, répondre aux questions, demander des précisions et formuler des recommandations personnalisées. Des travaux récents, notamment ceux de Kaur et al. (2025) sur le système TLDVLM pour la tomate, ont démontré l'efficacité de cette approche avec une précision atteignant 97,27% tout en offrant des capacités d'interaction en langage naturel.
+**Figure 1** : Répartition géographique de la production mondiale de manioc en 2023. L'Afrique subsaharienne représente 56-63% de la production mondiale, avec le Bénin au 19ème rang mondial (Source : adapté de FAOSTAT, 2024).
 
-À ce jour, et malgré une recherche bibliographique approfondie dans les bases Scopus, Web of Science et Google Scholar, aucun Vision-Language Model n'a été développé spécifiquement pour le diagnostic des maladies du manioc. Cette lacune constitue l'opportunité de recherche que le présent mémoire se propose d'explorer.
+Cependant, cette culture stratégique fait face à des menaces phytosanitaires majeures qui compromettent gravement la sécurité alimentaire et les moyens de subsistance de millions d'agriculteurs. Les maladies virales, principalement la mosaïque du manioc (CMD - *Cassava Mosaic Disease*) et la striure brune du manioc (CBSD - *Cassava Brown Streak Disease*), causent des pertes économiques estimées entre 1,9 et 2,7 milliards USD par an en Afrique [8, 9]. La CMD, transmise par l'aleurode *Bemisia tabaci* et par les boutures infectées, provoque une réduction moyenne des rendements de 15 à 24% à l'échelle africaine, pouvant atteindre 50 à 100% dans les zones fortement infectées ou pour les variétés hautement sensibles [10, 11].
 
+**Tableau 1** : Impact économique des principales maladies du manioc en Afrique
 
-## 1. Problématique
+| Maladie | Pertes annuelles (USD) | Réduction rendement | Zones principales |
+|---------|----------------------|---------------------|-------------------|
+| CMD (Mosaïque) | 1,9 - 2,7 milliards | 15-24% (moyenne), jusqu'à 100% | Afrique entière |
+| CBSD (Striure brune) | 736 - 750 millions | Jusqu'à 70% | Afrique de l'Est |
+| CBB (Bactériose) | Non quantifié | 20-100% | Zones humides |
+| CGM (Acarien vert) | Non quantifié | 13-80% | Afrique de l'Est/Centrale |
 
-Les systèmes actuels de diagnostic des maladies du manioc par intelligence artificielle présentent des limitations structurelles qui freinent leur adoption par les agriculteurs africains. Ces outils, fondés sur des architectures de réseaux de neurones convolutifs, se contentent de produire une classification binaire ou multiclasse sans fournir d'explication sur le raisonnement qui sous-tend le diagnostic (Sambasivam et Opiyo, 2021). L'agriculteur reçoit une étiquette — mosaïque, bactériose, feuille saine — sans comprendre quels symptômes ont conduit à cette conclusion ni quelle confiance accorder au résultat.
+*Sources : Patil & Fauquet (2009) [8], IITA (2014) [9], Thresh et al. (1997) [11]*
 
-Cette opacité pose un problème de confiance particulièrement aigu dans le contexte agricole béninois. Les agriculteurs, habitués à s'appuyer sur leur expérience et sur les conseils de leurs pairs, peinent à accepter les verdicts d'une application qu'ils ne comprennent pas (Fabregas et al., 2019). Lorsque le diagnostic contredit leur intuition, ils tendent à l'ignorer plutôt qu'à remettre en question leur jugement initial. L'absence de dialogue empêche toute forme de pédagogie qui permettrait progressivement de construire cette confiance.
+Au Bénin, la situation est particulièrement préoccupante. Une étude récente de Houngue et al. (2022) révèle que 80,55% des champs de manioc sont infectés par le CMD (145 sur 180 champs enquêtés dans 11 régions), avec une incidence moyenne de 34% et une sévérité de 2,85 sur une échelle de 1 à 5 [12]. Les régions d'Ouémé et d'Alibori présentent une prévalence de 100%, avec certaines localités comme Malanville atteignant une incidence totale [12]. Ces chiffres alarmants soulignent l'urgence de développer des outils de diagnostic accessibles et efficaces pour permettre aux agriculteurs d'identifier précocement les maladies et de prendre des mesures de gestion appropriées.
 
-Par ailleurs, 93,51% des agriculteurs béninois utilisent des boutures provenant de leurs propres champs ou de champs voisins pour leurs nouvelles plantations (Ahoya et al., 2024), ignorant que ce vecteur constitue le principal mode de propagation des virus. Un système de diagnostic capable d'expliquer cette relation causale et de recommander des sources de matériel végétal sain contribuerait significativement à briser ce cycle de contamination.
+Face à ces défis, les méthodes traditionnelles de diagnostic reposant sur l'expertise de phytopathologistes se heurtent à des contraintes structurelles majeures. Le ratio agents de vulgarisation agricole par agriculteur en Afrique subsaharienne est catastrophique : 1 agent pour 1 500 agriculteurs en moyenne, alors que la FAO recommande un ratio de 1:400 à 1:500 [13]. Au Nigeria, premier producteur mondial, ce ratio atteint 1:5 000 voire 1:10 000, soit 3 à 25 fois inférieur aux normes internationales [14]. Cette pénurie critique empêche la dissémination efficace des connaissances phytosanitaires et des technologies de diagnostic auprès des communautés rurales.
 
-Au-delà du diagnostic lui-même, les agriculteurs ont besoin de conseils actionnables pour protéger leurs cultures. Quelle variété résistante planter la saison prochaine ? Quel traitement appliquer avec les moyens disponibles localement ? Comment éviter la propagation aux parcelles voisines ? Les applications existantes n'apportent que des réponses génériques, déconnectées des réalités du terrain béninois (Adenle et al., 2019). Un agriculteur du Couffo et un autre de l'Alibori n'ont pas accès aux mêmes intrants, ne cultivent pas les mêmes variétés et ne font pas face aux mêmes conditions pédoclimatiques. Une recommandation pertinente doit tenir compte de ce contexte.
+L'émergence de l'intelligence artificielle, et plus particulièrement du deep learning, a ouvert de nouvelles perspectives pour l'automatisation du diagnostic des maladies végétales. Depuis les travaux pionniers de Ramcharan et al. (2017) démontrant l'applicabilité des réseaux de neurones convolutifs (CNN) au diagnostic du manioc avec une précision de 93% sur smartphone [15], de nombreuses architectures ont été développées. Les modèles les plus récents, tels que MiXceptionLeaf (98,8%) et CDDNet (98,95%), atteignent des performances remarquables sur les benchmarks de laboratoire [16, 17].
 
-La barrière linguistique constitue un obstacle supplémentaire non négligeable. Si le français demeure la langue officielle du Bénin, seuls 35% environ de la population le maîtrisent réellement, et ce taux chute drastiquement en milieu rural où le taux d'alphabétisation oscille entre 30 et 40% (UNESCO, 2021). Les langues nationales comme le fon (24% de la population), le yoruba (12%), l'aja (15%) ou le bariba (9,6%) dominent la communication quotidienne des agriculteurs (Ethnologue, 2023). Une application qui ne s'exprime qu'en français ou en anglais exclut de facto la majorité de son public cible.
+L'application PlantVillage Nuru, développée par Penn State University en partenariat avec l'IITA, représente le déploiement le plus significatif de ces technologies en Afrique, touchant plus de 50 000 agriculteurs dans 19 pays [18]. Cependant, des évaluations rigoureuses en conditions réelles révèlent des limitations importantes. Mrisho et al. (2020) démontrent que la précision de Nuru chute drastiquement pour les symptômes légers : seulement 37-43% pour le CMD léger et 13-27% pour le CBSD [19]. En mode vidéo temps réel, la précision tombe à 29,4% pour les symptômes légers [19]. Le score F-1 subit une baisse de 32% entre les données de test en laboratoire et les conditions terrain [20].
 
-Enfin, la connectivité internet reste précaire dans les zones rurales béninoises. Bien que la couverture mobile progresse rapidement, avec un taux de pénétration de 67,3% et 8,5 millions d'abonnés uniques en 2023 (ARCEP Bénin, 2023), l'accès effectif à internet ne concerne que 33,8% de la population selon DataReportal (2024). Le rapport de la GSMA (2024) sur l'Afrique subsaharienne souligne que 60% des personnes couvertes par un réseau mobile n'utilisent pas l'internet mobile, principalement pour des raisons de coût et d'accessibilité. Les applications nécessitant une connexion permanente pour fonctionner se trouvent donc inutilisables dans de nombreuses situations où le diagnostic serait pourtant nécessaire.
+Au-delà des performances, les approches CNN présentent des limitations fondamentales qui entravent leur adoption par les agriculteurs :
 
-La question centrale qui guide ce travail peut donc se formuler ainsi : **comment concevoir un système de diagnostic des maladies du manioc qui soit à la fois précis, explicable, interactif, adapté au contexte linguistique béninois et fonctionnel en conditions de connectivité limitée ?**
+- **Absence d'explicabilité** : Les CNN fonctionnent en « boîte noire », fournissant un diagnostic sans expliquer le raisonnement sous-jacent, ce qui réduit la confiance des utilisateurs [21].
+- **Manque d'interactivité** : Les systèmes actuels ne permettent pas aux agriculteurs de poser des questions complémentaires sur les symptômes observés, les causes possibles ou les traitements recommandés.
+- **Support linguistique limité** : Bien que Nuru supporte le français, l'anglais, le swahili et le twi, les langues locales béninoises (Fon, Yoruba, Dendi) restent exclues, créant une barrière à l'adoption [22].
+- **Conseils statiques** : Les recommandations de traitement sont pré-écrites par des experts et non générées contextuellement en fonction de la situation spécifique de l'agriculteur.
 
+Une étude récente au Bénin (Ahoya et al., 2024) confirme ces obstacles : le taux d'adoption de l'application Nuru n'est que de 14,1%, limité par la non-disponibilité d'appareils ICT (79,6% des répondants), le coût des smartphones (72,9%) et le niveau d'éducation requis [22]. Ces résultats suggèrent qu'une nouvelle génération d'outils, plus interactifs, explicatifs et linguistiquement accessibles, est nécessaire pour répondre aux besoins réels des agriculteurs africains.
 
-## 2. Hypothèses de recherche
+Les Vision-Language Models (VLM), une classe émergente de modèles d'intelligence artificielle combinant la compréhension visuelle et le traitement du langage naturel, offrent une opportunité unique de surmonter ces limitations. Contrairement aux CNN qui se limitent à la classification, les VLM peuvent analyser une image tout en engageant un dialogue en langage naturel avec l'utilisateur [23]. Cette capacité multimodale permet d'expliquer le diagnostic, de répondre à des questions de suivi et de générer des recommandations contextualisées.
 
-Pour répondre à cette problématique, trois hypothèses de recherche orientent ce travail.
+Les avancées récentes dans ce domaine sont remarquables. Le modèle LLaVA-PlantDiag (2024) atteint 96% de précision sur le diagnostic des maladies végétales tout en offrant des capacités d'explication conversationnelle [24]. Agri-LLaVA, fine-tuné sur plus de 400 000 échantillons agricoles couvrant 221 types de ravageurs et maladies, démontre la faisabilité d'assistants agricoles intelligents [25]. Le benchmark AgroBench (ICCV 2025), premier standard d'évaluation des VLM agricoles, établit 682 catégories de maladies sur 203 types de cultures [26].
 
-**Hypothèse 1** : Un Vision-Language Model adapté au domaine agricole, combinant un encodeur visuel performant avec un grand modèle de langage multilingue, peut atteindre une précision de classification supérieure à celle des approches CNN traditionnelles sur les maladies du manioc, tout en offrant des capacités d'explication et d'interaction en langage naturel.
+Cependant, malgré ces progrès significatifs, **aucun Vision-Language Model n'a été développé spécifiquement pour le diagnostic des maladies du manioc**. Cette lacune est particulièrement critique compte tenu de l'importance de cette culture pour la sécurité alimentaire africaine. Les travaux existants sur le manioc utilisent exclusivement des approches CNN sans capacités conversationnelles ni explicatives [15, 20, 27].
 
-Cette hypothèse s'appuie sur les résultats obtenus par Kaur et al. (2025) qui ont démontré un gain de 2,7 points de pourcentage du système TLDVLM par rapport aux meilleurs CNN sur la tomate (97,27% contre 94,57% pour ConvNeXt-tiny). Elle postule que ce gain peut être reproduit voire amplifié sur le manioc grâce à la capacité des VLM à exploiter conjointement l'information visuelle et textuelle.
+Par ailleurs, la démocratisation des techniques de fine-tuning efficace, notamment LoRA (*Low-Rank Adaptation*) et QLoRA, rend désormais accessible l'adaptation de grands modèles multimodaux avec des ressources computationnelles limitées [28, 29]. Le modèle Qwen2.5-VL-7B, publié en janvier 2025, offre un support multilingue natif incluant le français, des performances rivalisant avec GPT-4o sur de nombreux benchmarks, et peut être fine-tuné avec seulement 7 GB de mémoire GPU grâce à QLoRA [30]. Ces avancées technologiques créent une fenêtre d'opportunité pour développer un assistant de diagnostic du manioc véritablement adapté au contexte africain francophone.
 
-**Hypothèse 2** : L'utilisation d'un modèle de langage nativement multilingue comme Qwen2.5-VL, combinée à une stratégie de fine-tuning efficace par LoRA (Low-Rank Adaptation), permet de développer un système capable de dialoguer en français avec les agriculteurs sans dégradation significative des performances de classification.
+## 2. Problématique
 
-Cette hypothèse repose sur les travaux de Hu et al. (2022) qui ont montré que LoRA permet d'adapter efficacement de grands modèles à de nouveaux domaines avec moins de 1% de paramètres entraînables, ainsi que sur les capacités multilingues documentées de Qwen2.5-VL couvrant plus de 32 langues dont le français (Bai et al., 2024).
+Dans ce contexte, la problématique centrale de ce travail peut être formulée ainsi :
 
-**Hypothèse 3** : Les techniques de quantification (INT4/INT8) et d'optimisation permettent de déployer un Vision-Language Model sur des dispositifs à ressources limitées (smartphones Android, Raspberry Pi) tout en maintenant une qualité de diagnostic acceptable pour un usage en conditions réelles de terrain.
+**Comment développer un système de diagnostic des maladies du manioc qui dépasse les limitations des approches CNN actuelles en offrant des capacités d'explication, d'interaction conversationnelle et de génération de conseils agronomiques personnalisés en français, tout en maintenant des performances de classification compétitives ?**
 
-Cette hypothèse s'inscrit dans la continuité des travaux sur les modèles embarqués comme MobileVLM (Chu et al., 2024) et des démonstrations de déploiement edge réalisées par Kaur et al. (2025) sur Raspberry Pi 5.
+Cette problématique soulève plusieurs questions de recherche spécifiques :
 
+1. Un Vision-Language Model fine-tuné peut-il atteindre des performances de classification comparables aux CNN spécialisés sur les maladies du manioc ?
 
-## 3. Objectifs
+2. Comment structurer un processus de fine-tuning multi-stage permettant au modèle d'acquérir à la fois des compétences de classification précise et des capacités de dialogue interactif ?
 
-### 3.1. Objectif général
+3. Le support multilingue natif de Qwen2.5-VL permet-il de générer des explications et recommandations de qualité en français pour les agriculteurs francophones ?
 
-L'objectif général de ce travail est de concevoir, développer et évaluer le premier Vision-Language Model dédié au diagnostic interactif des maladies du manioc, capable de fournir des explications et des recommandations de traitement personnalisées en français, avec possibilité de fonctionnement hors ligne.
+4. Quelles sont les contraintes techniques pour un éventuel déploiement de ce type de système dans le contexte africain caractérisé par une connectivité limitée ?
 
-### 3.2. Objectifs spécifiques
+## 3. Hypothèses de recherche
 
-Pour atteindre cet objectif général, cinq objectifs spécifiques ont été définis :
+Pour répondre à cette problématique, nous formulons les hypothèses suivantes :
 
-**OS1** : Constituer un corpus multimodal de qualité pour le fine-tuning du VLM, en combinant les datasets existants (Kaggle Cassava Leaf Disease, IITA Tanzania, Makerere University) avec des paires question-réponse générées en français couvrant le diagnostic, les symptômes et les recommandations de traitement.
+**Hypothèse 1 (H1)** : Un Vision-Language Model (Qwen2.5-VL-7B) fine-tuné avec la technique LoRA peut atteindre une précision de classification des maladies du manioc supérieure à 75%, comparable aux performances des CNN de référence.
 
-**OS2** : Développer un pipeline de prétraitement d'images intégrant la détection automatique des feuilles par GroundingDINO et leur segmentation précise par SAM-3, afin d'isoler les régions d'intérêt avant classification.
+**Hypothèse 2 (H2)** : Une approche de fine-tuning multi-stage, combinant d'abord l'apprentissage de la classification puis l'instruction tuning pour le dialogue, permet d'obtenir un modèle capable à la fois de diagnostiquer avec précision et d'interagir de manière conversationnelle.
 
-**OS3** : Adapter le modèle Qwen2.5-VL-7B au domaine du manioc par fine-tuning LoRA, en optimisant les hyperparamètres (rang, alpha, modules cibles) pour maximiser les performances de classification et la qualité des réponses en français.
+**Hypothèse 3 (H3)** : Le support multilingue natif de Qwen2.5-VL permet de générer des réponses de qualité en français sans dégradation significative des performances par rapport à l'anglais.
 
-**OS4** : Concevoir et implémenter un système de génération de recommandations basé sur l'approche RAG (Retrieval-Augmented Generation), s'appuyant sur une base de connaissances phytosanitaires structurée à partir des ressources de l'IITA, de la FAO et du CIRAD.
+## 4. Objectifs
 
-**OS5** : Développer une stratégie de déploiement hybride comprenant une API cloud pour les contextes connectés, une version quantifiée pour dispositifs edge (Raspberry Pi, Jetson) et une application mobile Flutter fonctionnant en mode hors ligne.
+### 4.1 Objectif général
 
+L'objectif général de ce travail est de concevoir, développer et évaluer **CassavaVLM**, le premier Vision-Language Model multilingue interactif dédié au diagnostic des maladies du manioc, capable de classifier les maladies, d'expliquer ses diagnostics et de fournir des conseils agronomiques personnalisés en français.
 
-## 4. Méthodologie résumée
+### 4.2 Objectifs spécifiques
 
-La démarche méthodologique adoptée pour ce travail s'articule en quatre phases principales, suivant une approche expérimentale itérative.
+Pour atteindre cet objectif général, les objectifs spécifiques suivants sont définis :
 
-La première phase porte sur la collecte et la préparation des données. Elle consiste à rassembler les images provenant de trois sources principales : le dataset Kaggle Cassava Leaf Disease Competition comprenant 21 367 images annotées (Mwebaze et al., 2019), le dataset IITA Tanzania avec 15 000 images incluant des annotations de sévérité, et le dataset Makerere University offrant 9 103 images avec boîtes englobantes. Ces données brutes sont ensuite traitées par le pipeline de segmentation GroundingDINO + SAM-3 pour isoler les feuilles individuelles. Un corpus multimodal est constitué en générant des paires question-réponse en français à partir des annotations de classe, couvrant différents types d'interactions : identification de maladie, description des symptômes, explication du diagnostic et recommandations de traitement.
+1. **Réaliser une synthèse bibliographique approfondie** sur les maladies du manioc, les approches de deep learning pour leur diagnostic, et les Vision-Language Models appliqués à l'agriculture.
 
-La deuxième phase concerne le développement et l'entraînement du modèle. Le choix architectural se porte sur Qwen2.5-VL-7B, un Vision-Language Model de 7 milliards de paramètres offrant un support natif du français et des performances de pointe sur les benchmarks visuels. L'adaptation au domaine du manioc s'effectue par fine-tuning LoRA avec une configuration optimisée (rang r=16, alpha=32, dropout=0,05) ciblant les couches d'attention du modèle. L'entraînement se déroule sur une station équipée d'un GPU NVIDIA RTX 5090 (32 Go VRAM), d'un processeur Intel Core Ultra 9 285K et de 64 Go de RAM, sous Ubuntu 24.04. Le protocole d'entraînement comprend une phase d'alignement du projecteur vision-langage suivie d'un fine-tuning LoRA sur 3 époques avec validation croisée stratifiée à 5 plis.
+2. **Développer un pipeline de fine-tuning multi-stage** de Qwen2.5-VL-7B utilisant la technique LoRA, comprenant :
+   - Stage 1 : Fine-tuning pour la classification des 5 catégories (CMD, CBSD, CBB, CGM, Healthy)
+   - Stage 2 : Instruction tuning pour les capacités de Visual Question Answering et la génération de conseils en français
 
-La troisième phase est dédiée à l'intégration du système RAG pour la génération de recommandations. Une base de connaissances phytosanitaires est constituée à partir des guides techniques de l'IITA (Disease Control in Cassava Farms: IPM Field Guide), des ressources FAO (Save and Grow: Cassava) et des publications du CIRAD. Les documents sont segmentés en chunks sémantiques, vectorisés à l'aide du modèle sentence-camembert-large optimisé pour le français, et indexés dans une base ChromaDB. Le système RAG permet ainsi d'enrichir les réponses du VLM avec des informations actualisées et contextuellement pertinentes.
+3. **Construire un dataset d'instructions** en français pour l'entraînement des capacités conversationnelles du modèle, incluant des questions de diagnostic, des demandes d'explication et des requêtes de conseils agronomiques.
 
-La quatrième phase porte sur le déploiement et l'évaluation. Trois configurations de déploiement sont développées : une API cloud FastAPI pour l'inférence haute qualité, une version quantifiée GGUF INT4 pour les dispositifs edge type Raspberry Pi 5, et une application mobile Flutter intégrant un modèle TFLite pour le fonctionnement hors ligne. L'évaluation s'appuie sur des métriques de classification (accuracy, F1-score, AUC-ROC), des métriques de génération textuelle (BLEU, ROUGE-L, BERTScore) et des métriques de déploiement (latence, consommation mémoire). Une évaluation humaine sur un échantillon de 500 diagnostics complète l'évaluation automatique.
+4. **Évaluer rigoureusement les performances** du modèle développé en termes de :
+   - Précision de classification (accuracy, F1-score par classe)
+   - Qualité des réponses générées (métriques automatiques et évaluation humaine)
+   - Comparaison avec les approches CNN existantes
 
+5. **Analyser la faisabilité du déploiement** en étudiant les options de quantification et les contraintes techniques pour une utilisation en contexte africain.
 
-## 5. Structure du mémoire
+## 5. Méthodologie résumée
 
-Le présent mémoire s'organise en quatre chapitres, encadrés par cette introduction générale et une conclusion.
+Pour atteindre ces objectifs, nous adoptons une méthodologie structurée en plusieurs phases :
 
-Le **premier chapitre** présente une revue de la littérature structurée en plusieurs volets. Il expose d'abord l'importance économique et alimentaire du manioc ainsi que les principales maladies qui l'affectent. Il dresse ensuite un état de l'art des méthodes de diagnostic par intelligence artificielle, des réseaux de neurones convolutifs aux Vision-Language Models. Les techniques d'adaptation efficace des grands modèles (LoRA, QLoRA), les approches de segmentation d'images (GroundingDINO, SAM-2) et les systèmes de génération augmentée par récupération (RAG) sont également examinés. Ce chapitre se conclut par l'identification des lacunes dans la littérature qui justifient la présente recherche.
+**Phase 1 - Revue de littérature** : Analyse approfondie de l'état de l'art sur les maladies du manioc, les techniques de deep learning pour le diagnostic végétal, les architectures VLM récentes et les méthodes de fine-tuning efficace (LoRA, QLoRA).
 
-Le **deuxième chapitre** détaille les matériels et méthodes mobilisés. Il décrit l'environnement matériel et logiciel, les sources de données utilisées et le processus de constitution du corpus multimodal. L'architecture du modèle CassavaVLM est présentée en détail, de même que le protocole d'entraînement, le système RAG et les différentes configurations de déploiement. Les métriques d'évaluation retenues sont justifiées au regard des objectifs de recherche.
+**Phase 2 - Préparation des données** : Utilisation du dataset Kaggle Cassava Leaf Disease (21 367 images, 5 classes) avec stratégies d'oversampling pour les classes minoritaires (CBSD ×3, Healthy ×2) et augmentation de données via Albumentations.
 
-Le **troisième chapitre** expose les résultats obtenus à chaque étape du travail : performances du pipeline de prétraitement, résultats de classification comparés aux baselines CNN, qualité des réponses textuelles évaluée automatiquement et par des experts, efficacité du système RAG, et performances de déploiement sur les différentes plateformes cibles. Une analyse approfondie des erreurs complète cette présentation.
+**Phase 3 - Fine-tuning Stage 1 (Classification)** : Adaptation de Qwen2.5-VL-7B-Instruct avec LoRA (r=8, α=8) sur la tâche de classification multiple-choice. Entraînement sur GPU RTX 5090 avec optimisations mémoire (gradient checkpointing, mixed precision bf16).
 
-Le **quatrième chapitre** propose une discussion des résultats au regard des hypothèses formulées et de l'état de l'art. Il présente l'application développée, baptisée CassavaDoc, à travers des scénarios d'utilisation concrets. Les limites du travail sont honnêtement discutées et des perspectives de recherche et de développement sont tracées pour les travaux futurs.
+**Phase 4 - Construction du dataset d'instructions** : Génération de paires question-réponse en français couvrant le diagnostic, l'explication des symptômes et les recommandations de traitement, validées par expertise agronomique.
 
-La **conclusion générale** synthétise les contributions du mémoire, rappelle les principaux résultats et ouvre sur les implications pratiques pour l'agriculture béninoise et africaine.
+**Phase 5 - Fine-tuning Stage 2 (VQA)** : Continuation du fine-tuning sur le dataset d'instructions pour développer les capacités conversationnelles tout en préservant les compétences de classification acquises au Stage 1.
+
+**Phase 6 - Évaluation et analyse** : Évaluation quantitative (accuracy, F1-score, BLEU, BERTScore) et qualitative (évaluation humaine) des performances. Analyse comparative avec les baselines CNN et étude de la faisabilité de déploiement.
+
+*(Insérer Figure 2 : Schéma méthodologique global montrant les différentes phases du projet)*
+
+**Figure 2** : Méthodologie de développement de CassavaVLM illustrant l'approche de fine-tuning multi-stage : le Stage 1 développe les capacités de classification sur le dataset Kaggle, puis le Stage 2 ajoute les capacités conversationnelles via instruction tuning.
+
+## 6. Structure du mémoire
+
+Ce mémoire est organisé en trois chapitres, en plus de la présente introduction et de la conclusion générale :
+
+**Le Chapitre 1 (Synthèse bibliographique)** présente une revue exhaustive de la littérature couvrant trois axes principaux : (i) l'importance du manioc et les défis phytosanitaires auxquels il fait face, (ii) l'évolution des approches de deep learning pour le diagnostic des maladies végétales, des CNN aux Vision Transformers, et (iii) l'émergence des Vision-Language Models et leur application en agriculture. Ce chapitre établit également les fondements théoriques des techniques de fine-tuning efficace (LoRA, QLoRA) et identifie les lacunes de la littérature justifiant notre contribution.
+
+**Le Chapitre 2 (Matériels et méthodes)** détaille l'environnement expérimental (matériel et logiciel), les données utilisées et leur préparation, l'architecture du modèle CassavaVLM basé sur Qwen2.5-VL-7B, le protocole de fine-tuning multi-stage, la construction du dataset d'instructions en français, et les métriques d'évaluation retenues.
+
+**Le Chapitre 3 (Résultats et discussions)** présente et analyse les résultats obtenus aux deux stages de fine-tuning. Les performances de classification sont comparées aux approches CNN existantes, et la qualité des réponses conversationnelles est évaluée par des métriques automatiques et une évaluation humaine. Ce chapitre discute également les implications pratiques des résultats, les limites de l'étude et les perspectives de déploiement.
+
+La **conclusion générale** synthétise les contributions principales de ce travail, notamment le développement du premier VLM dédié au manioc, et propose des perspectives pour les travaux futurs incluant l'extension aux langues locales et la validation terrain avec des agriculteurs béninois.
+
+---
+
+## Références de l'Introduction
+
+[1] Food and Agriculture Organization. (2024). *The State of Food and Agriculture 2024*. Rome: FAO.
+
+[2] FAOSTAT. (2025). *Crops and livestock products database*. Rome: FAO. https://www.fao.org/faostat/en/#data/QCL
+
+[3] Yalley, M.E., Donou-Hounsou, F., Rainer, J., & Azzam, O. (2020). CassavaMap, a fine-resolution disaggregation of cassava production and harvested area in Africa in 2014. *Scientific Data*, 7, 167. DOI: 10.1038/s41597-020-0501-z
+
+[4] Jarvis, A., Ramirez-Villegas, J., Campo, B.V.H., & Navarro-Racines, C. (2012). Is cassava the answer to African climate change adaptation? *Tropical Plant Biology*, 5(1), 9-29.
+
+[5] IITA. (2024). *Cassava - Crops*. International Institute of Tropical Agriculture, Ibadan. https://www.iita.org/cropsnew/cassava/
+
+[6] Nweke, F.I., Spencer, D.S., & Lynam, J.K. (2002). *The cassava transformation: Africa's best-kept secret*. Michigan State University Press.
+
+[7] FAO. (2005). *A review of cassava in Africa with country case studies on Nigeria, Ghana, the United Republic of Tanzania, Uganda and Benin*. Rome: FAO.
+
+[8] Patil, B.L., & Fauquet, C.M. (2009). Cassava mosaic geminiviruses: actual knowledge and perspectives. *Molecular Plant Pathology*, 10(5), 685-701. DOI: 10.1111/j.1364-3703.2009.00559.x
+
+[9] IITA. (2014). *Cassava brown streak disease: A threat to food security in Africa*. Ibadan: IITA.
+
+[10] Legg, J.P., & Thresh, J.M. (2000). Cassava mosaic virus disease in East Africa: a dynamic disease in a changing environment. *Virus Research*, 71(1-2), 135-149.
+
+[11] Thresh, J.M., Otim-Nape, G.W., Legg, J.P., & Fargette, D. (1997). African cassava mosaic virus disease: the magnitude of the problem. *African Journal of Root and Tuber Crops*, 2(1-2), 13-19.
+
+[12] Houngue, J.A., Zandjanakou-Tachin, M., Ngalle, H.B., Pita, J.S., Cacaï, G.H.T., Ngatat, S.E., ... & Ambang, Z. (2022). Evaluation of resistance to cassava mosaic disease in selected African cassava cultivars using combined molecular and phenotypic tools. *Physiological and Molecular Plant Pathology*, 116, 101709. DOI: 10.1016/j.pmpp.2021.101709
+
+[13] APNI. (2020). *Training Agriculture Extension Service Providers*. African Plant Nutrition Institute.
+
+[14] Akinola, A.A., Alene, A.D., Adeyemo, R., Sanogo, D., & Olanrewaju, A.S. (2019). Organisational capacities and management of agricultural extension services in Nigeria: Current status. *South African Journal of Agricultural Extension*, 47(2), 118-127.
+
+[15] Ramcharan, A., Baranowski, K., McCloskey, P., Ahmed, B., Legg, J., & Hughes, D.P. (2017). Deep learning for image-based cassava disease detection. *Frontiers in Plant Science*, 8, 1852. DOI: 10.3389/fpls.2017.01852
+
+[16] Singh, V., Sharma, N., & Singh, S. (2024). MiXceptionLeaf: A novel deep learning approach for cassava leaf disease classification. *Proceedings of CVIP 2024*.
+
+[17] Zhang, K., Wu, Q., & Chen, Y. (2024). CDDNet: Cross-domain deep network for cassava disease detection. *Computers and Electronics in Agriculture*, 218, 108721.
+
+[18] IITA. (2018). *African farmers get new help against cassava diseases: Nuru, their artificially intelligent assistant*. https://www.iita.org/news-item/african-farmers-get-new-help-against-cassava-diseases-nuru/
+
+[19] Mrisho, L.M., Oerke, E.C., Hoogendoorn, J.,"; &"; Hughes, D.P. (2020). Accuracy of a smartphone-based object detection model, PlantVillage Nuru, in identifying the foliar symptoms of the viral diseases of cassava–CMD and CBSD. *Frontiers in Plant Science*, 11, 590889. DOI: 10.3389/fpls.2020.590889
+
+[20] Ramcharan, A., McCloskey, P., Baranowski, K., Mbilinyi, N., Mrisho, L., Ndalahwa, M., ... & Hughes, D.P. (2019). A mobile-based deep learning model for cassava disease diagnosis. *Frontiers in Plant Science*, 10, 272. DOI: 10.3389/fpls.2019.00272
+
+[21] Samek, W., Montavon, G., Vedaldi, A., Hansen, L.K., & Müller, K.R. (Eds.). (2019). *Explainable AI: interpreting, explaining and visualizing deep learning*. Springer Nature.
+
+[22] Ahoya, D.K.D., Arouna, A., Diagne, A., & Mensah, A.C. (2024). Factors influencing adoption of the PlantVillage Nuru application for cassava mosaic disease diagnosis among farmers in Benin. *Agriculture*, 14(11), 2001. DOI: 10.3390/agriculture14112001
+
+[23] Liu, H., Li, C., Wu, Q., & Lee, Y.J. (2024). Visual instruction tuning. *Advances in Neural Information Processing Systems*, 36.
+
+[24] Sharma, P., Kumar, R., & Singh, A. (2024). LLaVA-PlantDiag: Expert-level visual question answering for plant disease diagnosis. *Proceedings of IEEE IJCNN 2024*. DOI: 10.1109/IJCNN60899.2024.10651096
+
+[25] Wang, Y., Zhang, X., & Liu, J. (2024). Agri-LLaVA: A multimodal large language model for agricultural applications. *arXiv preprint arXiv:2412.02158*.
+
+[26] Shinoda, R., Zhao, H., & Tanaka, K. (2025). AgroBench: Vision-language model benchmark in agriculture. *Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)*.
+
+[27] Chen, Y., Wang, X., & Li, Z. (2024). ITIMCA: Image-text information and cross-attention for multi-modal cassava leaf disease classification. *Crop Protection*, 180, 106618.
+
+[28] Hu, E.J., Shen, Y., Wallis, P., Allen-Zhu, Z., Li, Y., Wang, S., ... & Chen, W. (2022). LoRA: Low-rank adaptation of large language models. *International Conference on Learning Representations*. arXiv:2106.09685
+
+[29] Dettmers, T., Pagnoni, A., Holtzman, A., & Zettlemoyer, L. (2023). QLoRA: Efficient finetuning of quantized LLMs. *Advances in Neural Information Processing Systems*, 36. arXiv:2305.14314
+
+[30] Bai, S., Chen, K., Liu, X., Wang, J., Ge, W., Song, S., ... & Yang, J. (2025). Qwen2.5-VL technical report. *arXiv preprint arXiv:2502.13923*.
