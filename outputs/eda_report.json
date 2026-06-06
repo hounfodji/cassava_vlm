@@ -1,0 +1,62 @@
+{
+  "dataset": {
+    "total_images": 21397,
+    "num_classes": 5,
+    "class_distribution": {
+      "Cassava Bacterial Blight (CBB)": 1087,
+      "Cassava Brown Streak Disease (CBSD)": 2189,
+      "Cassava Green Mottle (CGM)": 2386,
+      "Cassava Mosaic Disease (CMD)": 13158,
+      "Healthy": 2577
+    }
+  },
+  "class_imbalance": {
+    "max_class": "Cassava Mosaic Disease (CMD)",
+    "max_count": 13158,
+    "min_class": "Cassava Bacterial Blight (CBB)",
+    "min_count": 1087,
+    "imbalance_ratio": 12.1048758049678
+  },
+  "image_properties": {
+    "width": {
+      "min": 800,
+      "max": 800,
+      "mean": 800.0,
+      "std": 0.0
+    },
+    "height": {
+      "min": 600,
+      "max": 600,
+      "mean": 600.0,
+      "std": 0.0
+    },
+    "aspect_ratio": {
+      "min": 1.3333333333333333,
+      "max": 1.3333333333333333,
+      "mean": 1.333333333333333
+    },
+    "size_kb": {
+      "min": 40.5224609375,
+      "max": 190.814453125,
+      "mean": 116.73307421875
+    }
+  },
+  "recommendations": {
+    "preprocessing": [
+      "Segmentation avec GroundingDINO + SAM-3",
+      "Redimensionnement uniforme à 448x448",
+      "Normalisation des images"
+    ],
+    "training": [
+      "Utiliser des poids de classe",
+      "Augmentation de données ciblée",
+      "LoRA fine-tuning (r=16, α=32)",
+      "Learning rate: 2e-5"
+    ],
+    "validation": [
+      "Split 80/15/5 (train/val/test)",
+      "Stratification par classe",
+      "K-fold cross-validation (k=5)"
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+Classe,Nom Complet,Échantillons,Correct,Accuracy (%)
+CBB,Cassava Bacterial Blight,156,86,55.1
+CBSD,Cassava Brown Streak Disease,662,556,84.0
+CGM,Cassava Green Mottle,317,179,56.5
+CMD,Cassava Mosaic Disease,2082,1791,86.0
+Healthy,Feuille Saine,402,303,75.4
+TOTAL,-,3619,2915,80.52

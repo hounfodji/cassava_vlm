@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "Bash(python3:*)",
+      "WebSearch",
+      "Bash(ls:*)",
+      "Bash(wc:*)",
+      "Bash(cat:*)",
+      "Bash(grep:*)",
+      "Bash(git -C /home/hounfodjidagba/learning/cassava log --all --grep=\"test\" --oneline)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

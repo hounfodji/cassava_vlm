@@ -1,0 +1,137 @@
+{
+  "project_info": {
+    "project_name": "CassavaVLM Dataset Preparation",
+    "objective": "Prepare cassava disease detection dataset for VLM training",
+    "target_model": "Qwen2.5-VL-7B-Instruct",
+    "completion_date": "2025-12-31T19:18:38.736124",
+    "success": true
+  },
+  "quality_metrics": {
+    "overall_success_rate": 99.92789958378397,
+    "primary_pipeline_rate": 95.0250712810933,
+    "fallback_rate": 4.902828302690657,
+    "failure_rate": 0.07210041621603906,
+    "processing_speed_ms": 283.73339565200496,
+    "total_processing_time_hours": 1.391812841296196,
+    "target_achieved": true
+  },
+  "per_class_results": [
+    {
+      "Class": 0,
+      "Disease": "Cassava Bacterial Blight (CBB)",
+      "Total": 1087,
+      "Success": 1087,
+      "Failed": 0,
+      "Success Rate (%)": 100.0,
+      "Primary": 1054,
+      "Fallback": 33,
+      "Primary Rate (%)": 96.96412143514259,
+      "Fallback Rate (%)": 3.035878564857406,
+      "Avg Time (ms)": 253.7930154317875
+    },
+    {
+      "Class": 1,
+      "Disease": "Cassava Brown Streak Disease (CBSD)",
+      "Total": 5186,
+      "Success": 5186,
+      "Failed": 0,
+      "Success Rate (%)": 100.0,
+      "Primary": 5117,
+      "Fallback": 69,
+      "Primary Rate (%)": 98.66949479367528,
+      "Fallback Rate (%)": 1.3305052063247205,
+      "Avg Time (ms)": 273.0568077313224
+    },
+    {
+      "Class": 2,
+      "Disease": "Cassava Green Mottle (CGM)",
+      "Total": 2386,
+      "Success": 2386,
+      "Failed": 0,
+      "Success Rate (%)": 100.0,
+      "Primary": 2342,
+      "Fallback": 44,
+      "Primary Rate (%)": 98.15590947191953,
+      "Fallback Rate (%)": 1.8440905280804691,
+      "Avg Time (ms)": 255.09726621479123
+    },
+    {
+      "Class": 3,
+      "Disease": "Cassava Mosaic Disease (CMD)",
+      "Total": 18158,
+      "Success": 18136,
+      "Failed": 22,
+      "Success Rate (%)": 99.87884128207952,
+      "Primary": 16905,
+      "Fallback": 1231,
+      "Primary Rate (%)": 93.0994602929838,
+      "Fallback Rate (%)": 6.779380989095715,
+      "Avg Time (ms)": 292.32303851440605
+    },
+    {
+      "Class": 4,
+      "Disease": "Healthy",
+      "Total": 3696,
+      "Success": 3696,
+      "Failed": 0,
+      "Success Rate (%)": 100.0,
+      "Primary": 3577,
+      "Fallback": 119,
+      "Primary Rate (%)": 96.78030303030303,
+      "Fallback Rate (%)": 3.2196969696969697,
+      "Avg Time (ms)": 283.80619002369065
+    }
+  ],
+  "vlm_dataset": {
+    "total_samples": 30491,
+    "train": 24392,
+    "val": 3049,
+    "test": 3050,
+    "format": "Qwen2.5-VL JSONL",
+    "ready_for_training": true
+  },
+  "class_distribution": {
+    "Cassava Bacterial Blight (CBB)": {
+      "total": 1087,
+      "percentage": 3.5649863894263882,
+      "train": 869,
+      "val": 109,
+      "test": 109
+    },
+    "Cassava Mosaic Disease (CMD)": {
+      "total": 18136,
+      "percentage": 59.47984651208553,
+      "train": 14508,
+      "val": 1814,
+      "test": 1814
+    },
+    "Cassava Brown Streak Disease (CBSD)": {
+      "total": 5186,
+      "percentage": 17.00829753041881,
+      "train": 4149,
+      "val": 518,
+      "test": 519
+    },
+    "Healthy": {
+      "total": 3696,
+      "percentage": 12.121609655308124,
+      "train": 2957,
+      "val": 369,
+      "test": 370
+    },
+    "Cassava Green Mottle (CGM)": {
+      "total": 2386,
+      "percentage": 7.825259912761143,
+      "train": 1909,
+      "val": 239,
+      "test": 238
+    }
+  },
+  "recommendations": [
+    "Use LoRA fine-tuning (r=16, alpha=32)",
+    "Learning rate: 1e-4 to 5e-5",
+    "Batch size: 4-8 depending on VRAM",
+    "Handle class imbalance (ratio: 16.7:1)",
+    "Target accuracy: 95%+"
+  ]
+}

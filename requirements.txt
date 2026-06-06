@@ -1,0 +1,47 @@
+# Deep Learning Framework
+# Installation: pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
+torch>=2.3.0
+torchvision>=0.18.0
+torchaudio>=2.3.0
+
+# Transformers and Model Utils
+transformers>=4.40.0
+accelerate>=0.30.0
+qwen-vl-utils>=0.0.8
+
+# Image Processing
+Pillow>=10.3.0
+opencv-python>=4.9.0
+
+# Data Manipulation
+pandas>=2.2.0
+numpy>=1.26.0
+
+# Visualization
+matplotlib>=3.8.0
+seaborn>=0.13.0
+
+# Development Tools
+jupyter>=1.0.0
+ipykernel>=6.29.0
+notebook>=7.1.0
+
+# Progress Bars and Utilities
+tqdm>=4.66.0
+requests>=2.31.0
+
+# Configuration Management
+pyyaml>=6.0.0
+
+# For reproducibility
+scikit-learn>=1.4.0
+
+# Preprocessing (Phase 2)
+# groundingdino-py>=0.1.0 (pip install groundingdino-py --no-build-isolation)
+segment-anything>=1.0
+supervision>=0.16.0
+timm>=0.9.0
+
+# Fine-tuning (Phase 3-4)
+peft>=0.7.0
+bitsandbytes>=0.41.0

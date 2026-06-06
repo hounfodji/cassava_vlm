@@ -1,0 +1,102 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+redaction/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Data (too large for git)
+data/
+data/raw/
+data/stage*/
+!data/README.md
+!data/*/.gitkeep
+outputs
+# External datasets and benchmarks
+UnicomBenchmark/
+*.zip
+*.tar.gz
+*.rar
+
+# Checkpoints and model files (too large)
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+*.bin
+*.safetensors
+*.h5
+*.pkl
+*.pickle
+*.onnx
+!checkpoints/.gitkeep
+
+# Hugging Face cache
+.cache/huggingface/
+transformers_cache/
+hub/
+
+# API keys
+.env
+*.key
+kaggle.json
+
+# Logs
+*.log
+logs/
+tensorboard/
+
+# Cache
+.cache/
+*.cache
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (large files)
+data/raw/**/*
+data/processed/**/*
+data/multimodal/**/*
+!data/samples/
+
+# Models & checkpoints
+models/
+*.pth
+*.pt
+*.bin
+*.safetensors
+
+# Logs & outputs
+# outputs/
+logs/
+*.log
+
+# Secrets
+.env
+.env.local
+kaggle.json
+
+*.zip
+*.rar
+/data
+outputs/processed/
+outputs/vlm_dataset/
+notebooks/wandb

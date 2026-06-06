@@ -1,0 +1,117 @@
+_wandb:
+    value:
+        cli_version: 0.23.1
+        e:
+            e9a7h3xg62jq0m1n39idz2eyofz1mzkt:
+                codePath: /home/hounfodjidagba/learning/cassava/notebooks/12_training_phase2_lora.ipynb
+                codePathLocal: 12_training_phase2_lora.ipynb
+                cpu_count: 24
+                cpu_count_logical: 24
+                cudaVersion: "12.9"
+                disk:
+                    /:
+                        total: "1056281419776"
+                        used: "801115500544"
+                email: hospicehounfodji@gmail.com
+                executable: /home/hounfodjidagba/miniconda3/envs/cassava/bin/python
+                git:
+                    commit: 24bdd035b7d8bce8fbb17704a23f86fd87f084e1
+                    remote: git@github.com:hounfodji/cassava_vlm.git
+                gpu: NVIDIA GeForce RTX 5090
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Blackwell
+                      cudaCores: 21760
+                      memoryTotal: "34190917632"
+                      name: NVIDIA GeForce RTX 5090
+                      uuid: GPU-acdf022f-0691-8129-59b6-55b855b1ed2f
+                host: pc-ia02
+                memory:
+                    total: "66491920384"
+                os: Linux-6.8.0-79-generic-x86_64-with-glibc2.39
+                program: /home/hounfodjidagba/learning/cassava/notebooks/12_training_phase2_lora.ipynb
+                python: CPython 3.11.14
+                root: /home/hounfodjidagba/learning/cassava/notebooks
+                startedAt: "2026-01-01T09:04:36.078490Z"
+                writerId: e9a7h3xg62jq0m1n39idz2eyofz1mzkt
+        m: []
+        python_version: 3.11.14
+        t:
+            "1":
+                - 1
+                - 5
+                - 11
+                - 41
+                - 49
+                - 53
+                - 71
+                - 98
+            "2":
+                - 1
+                - 5
+                - 11
+                - 41
+                - 49
+                - 53
+                - 71
+                - 98
+            "3":
+                - 2
+                - 13
+                - 16
+            "4": 3.11.14
+            "5": 0.23.1
+            "6": 4.57.3
+            "8":
+                - 1
+                - 2
+            "12": 0.23.1
+            "13": linux-x86_64
+batch_size:
+    value: 2
+betas:
+    value:
+        - 0.9
+        - 0.999
+early_stopping_patience:
+    value: 2
+early_stopping_threshold:
+    value: 0.001
+eps:
+    value: 1e-08
+eval_every_n_steps:
+    value: 500
+gradient_accumulation_steps:
+    value: 8
+learning_rate:
+    value: 5e-05
+log_every_n_steps:
+    value: 10
+lora_alpha:
+    value: 32
+lora_r:
+    value: 16
+max_grad_norm:
+    value: 1
+mixed_precision:
+    value: bf16
+num_epochs:
+    value: 3
+optimizer:
+    value: AdamW
+phase:
+    value: phase2_lora
+save_every_n_steps:
+    value: 1000
+scheduler:
+    value: cosine
+seed:
+    value: 42
+total_params:
+    value: 8302259200
+trainable_params:
+    value: 529151488
+warmup_ratio:
+    value: 0.05
+weight_decay:
+    value: 0.01

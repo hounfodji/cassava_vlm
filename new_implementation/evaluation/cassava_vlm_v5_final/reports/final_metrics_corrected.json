@@ -1,0 +1,60 @@
+{
+  "evaluation_timestamp": "2026-01-21 23:17:26",
+  "model_path": "/home/hounfodjidagba/learning/cassava/new_implementation/checkpoints/stage2_v5_unified_final/final_model",
+  "test_dataset_size": 150,
+  "prediction_statistics": {
+    "total": 150,
+    "success": 150,
+    "errors": 0,
+    "correct": 120,
+    "incorrect": 30
+  },
+  "corrected_accuracy": 0.8,
+  "previous_accuracy": 0.4585,
+  "accuracy_improvement": 0.3415,
+  "valid_predictions_count": 150,
+  "per_class_metrics": {
+    "CBB": {
+      "precision": 0.7647058823529411,
+      "recall": 0.6842105263157895,
+      "f1_score": 0.7222222222222222,
+      "support": 19
+    },
+    "CBSD": {
+      "precision": 0.75,
+      "recall": 0.8,
+      "f1_score": 0.7741935483870968,
+      "support": 30
+    },
+    "CGM": {
+      "precision": 0.85,
+      "recall": 0.6538461538461539,
+      "f1_score": 0.7391304347826086,
+      "support": 26
+    },
+    "CMD": {
+      "precision": 0.8676470588235294,
+      "recall": 0.9365079365079365,
+      "f1_score": 0.9007633587786259,
+      "support": 63
+    },
+    "Healthy": {
+      "precision": 0.5384615384615384,
+      "recall": 0.5833333333333334,
+      "f1_score": 0.56,
+      "support": 12
+    }
+  },
+  "global_averages": {
+    "macro": {
+      "precision": 0.7541628959276018,
+      "recall": 0.7315795900006428,
+      "f1_score": 0.7392619128341107
+    },
+    "weighted": {
+      "precision": 0.801684766214178,
+      "recall": 0.8,
+      "f1_score": 0.7975567438749092
+    }
+  }
+}
